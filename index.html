@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="image"><img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&w=1000&q=80" width="200px"><br>
+    <div id="container">
+        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&w=1000&q=80" width="200px"><br>
     <span><b>Ping Pong Score Keeper</b></span>
-    </div>
-    <br>
-    <div id="scorebox">
-        <span id="score1">0</span>
-        <span>to</span>
-        <span id="score2">0</span>
-        <h3>Use the buttons below to keep score.</h3><br>
-       <label for="numgames">Playing to:</label>
-        <select name="numgames" id="numgames">
-            <option value="0">number of games</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select><br><br>
+    <br><br>
+        <div id="scorebox">
+            <span id="score1" class="score">0</span>
+            <span class="score">to</span>
+            <span id="score2" class="score">0</span>
+            <h3>Use the buttons below to keep score.</h3>
+            <label for="numgames"><b>Playing to</b></label>
+            <select name="numgames" id="numgames">
+                <option value="0">number of games</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br>
         <button id="player1">+ 1 Player One</button>
         <button id="player2">+1 Player Two</button>
         <button id="reset">Reset</button>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
